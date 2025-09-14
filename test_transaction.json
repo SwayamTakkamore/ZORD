@@ -1,0 +1,9 @@
+{
+    "wallet_from": "0x742d35Cc6634C0532925a3b8D4d0C123456789AB",
+    "wallet_to": "0x123d35Cc6634C0532925a3b8D4d0C123456789CD",
+    "amount": "500.75",
+    "currency": "ETH",
+    "kyc_proof_id": "kyc_12345",
+    "transaction_type": "transfer",
+    "description": "Payment for services"
+}

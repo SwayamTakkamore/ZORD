@@ -1,0 +1,42 @@
+{
+  "name": "compliance-copilot-zk-circuits",
+  "version": "1.0.0",
+  "description": "Zero-knowledge proof circuits for privacy-preserving compliance verification",
+  "main": "index.js",
+  "scripts": {
+    "compile": "circom circuits/compliance.circom --r1cs --wasm --sym --c",
+    "setup": "node scripts/setup.js",
+    "prove": "node scripts/prove.js",
+    "verify": "node scripts/verify.js",
+    "test": "mocha test/",
+    "dev": "nodemon scripts/server.js"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "circom",
+    "compliance",
+    "privacy",
+    "blockchain"
+  ],
+  "author": "Compliance Copilot Team",
+  "license": "MIT",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.4",
+    "ffjavascript": "^0.3.0",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "circom_tester": "^0.0.20",
+    "mocha": "^10.6.0",
+    "chai": "^5.1.1",
+    "nodemon": "^3.1.4",
+    "supertest": "^6.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

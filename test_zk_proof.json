@@ -1,0 +1,31 @@
+{
+    "transaction_data": {
+        "tx_uuid": "123e4567-e89b-12d3-a456-426614174000",
+        "wallet_from": "0x742d35Cc6634C0532925a3b8D4d0C123456789AB",
+        "wallet_to": "0x123d35Cc6634C0532925a3b8D4d0C123456789CD",
+        "amount": "1000.5",
+        "currency": "ETH",
+        "kyc_proof_id": "kyc_12345",
+        "timestamp": "2025-09-10T19:00:00Z"
+    },
+    "compliance_evidence": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "rules_evaluated": [
+            {"rule_type": "BLACKLIST_CHECK", "passed": true, "score": 0},
+            {"rule_type": "AMOUNT_THRESHOLD", "passed": true, "score": 5},
+            {"rule_type": "KYC_VERIFICATION", "passed": true, "score": 5}
+        ],
+        "evidence_hash": "0x1234567890abcdef",
+        "timestamp": "2025-09-10T19:00:00Z"
+    },
+    "merkle_proof": {
+        "root_hash": "0x9876543210fedcba9876543210fedcba9876543210fedcba9876543210fedcba",
+        "path_indices": [0, 1, 0],
+        "path_elements": [
+            "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+            "0xfedcba0987654321fedcba0987654321fedcba0987654321fedcba0987654321",
+            "0x1357924680135792468013579246801357924680135792468013579246801357"
+        ]
+    }
+}
